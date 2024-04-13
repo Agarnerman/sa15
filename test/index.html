@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to the basic quiz!</h1>
+  <div class="smaller-header">
+    <p>Will you be able to get all of the following correct?</p>
+  </div>
+  <div id="quiz-container">
+    <div class="question-block">
+      <p>What is the capital of France?</p>
+      <input type="text" id="answer1">
+      <button onclick="checkAnswer(1, 'Paris')">Enter</button>
+      <div id="feedback1"></div>
+    </div>
+    <div class="question-block">
+      <p>What is 5 + 3?</p>
+      <input type="text" id="answer2">
+      <button onclick="checkAnswer(2, '8')">Enter</button>
+      <div id="feedback2"></div>
+    </div>
+    <div class="question-block">
+      <p>Who wrote 'Macbeth'?</p>
+      <input type="text" id="answer3">
+      <button onclick="checkAnswer(3, 'Shakespeare')">Enter</button>
+      <div id="feedback3"></div>
+    </div>
+    <div class="question-block">
+      <p>What is 15% of 200?</p>
+      <input type="text" id="answer4">
+      <button onclick="checkAnswer(4, '30')">Enter</button>
+      <div id="feedback4"></div>
+    </div>
+    <div class="question-block">
+      <p>Which novel features the character Atticus Finch?</p>
+      <input type="text" id="answer5">
+      <button onclick="checkAnswer(5, 'To Kill a Mockingbird')">Enter</button>
+      <div id="feedback5"></div>
+    </div>
+    <div class="question-block">
+      <p>In which country are the Pyramids of Giza located?</p>
+      <input type="text" id="answer6">
+      <button onclick="checkAnswer(6, 'Egypt')">Enter</button>
+      <div id="feedback6"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
